@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .Primary-btn {
+    @apply bg-black text-white hover:bg-zinc-800 transition-all ease-in rounded-md;
+  }
+}
