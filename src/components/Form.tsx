@@ -60,11 +60,13 @@ export const Form = () => {
 
   return (
     <div className="flex flex-col mt-10 p-12 md:p-20">
-      <div className="p-10 m-auto text-lg rounded-2xl border-black border-2 bg-slate-100">
-        <div>
-          <label htmlFor="loanAmount">Loan amount</label>
+      <div className="p-10 m-auto text-lg rounded-2xl  bg-gradient-to-b from-[#2a56fe] to-[#7a24fa]">
+        <div className="">
+          <label htmlFor="loanAmount" className="text-white">
+            Loan amount
+          </label>
           <input
-            className="p-2 border-none rounded-lg"
+            className="p-2  border-none rounded-lg"
             type="number"
             id="loanAmount"
             placeholder="E.g 5000"
@@ -72,7 +74,7 @@ export const Form = () => {
             onChange={(e) => setPrincipal(Number(e.target.value))}
           />
           <select
-            className="p-1 bg-[#2a56fe] rounded-lg text-white"
+            className="p-1 m-0.5 bg-white rounded-lg "
             value={state.currency}
             onChange={(e) =>
               dispatch((prevState) => ({
@@ -88,7 +90,9 @@ export const Form = () => {
           </select>
         </div>
         <div>
-          <label htmlFor="loanTermYears">Loan term in years</label>
+          <label htmlFor="loanTermYears" className="text-white">
+            Loan term in years
+          </label>
           <input
             className="p-2 border-none rounded-lg"
             type="number"
@@ -99,7 +103,9 @@ export const Form = () => {
           />
         </div>
         <div>
-          <label htmlFor="loanTermMonths">Loan term in months</label>
+          <label htmlFor="loanTermMonths" className="text-white">
+            Loan term in months
+          </label>
           <input
             className="p-2 border-none rounded-lg"
             type="number"
@@ -110,7 +116,9 @@ export const Form = () => {
           />
         </div>
         <div className="">
-          <label htmlFor="interest">Interest rate per year</label>
+          <label htmlFor="interest" className="text-white">
+            Interest rate per year
+          </label>
           <input
             className="p-2 border-none rounded-lg"
             type="number"
@@ -122,7 +130,7 @@ export const Form = () => {
         </div>
         <div className="mt-5">
           <button
-            className="bg-[#2a56fe] text-white px-3 py-1"
+            className="bg-white text-black rounded-lg px-3 py-1"
             onClick={calculateMonthlyPayment}
           >
             Calculate
