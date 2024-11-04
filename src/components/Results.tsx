@@ -42,7 +42,7 @@ export const Results = () => {
       </div>
       {/* ------------------------------------------- */}
       <div className="m-5 flex flex-col items-center">
-        <div className="text-md text-white">Monthly payment</div>
+        <div className="text-md text-white">Weekly payment</div>
         <div className="">
           <span className="font-bold text-white">{state.currency}</span>{" "}
           <span className="text-4xl text-white">
