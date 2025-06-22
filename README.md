@@ -1,6 +1,9 @@
-# 🌦️ Weather App
+# 🌤️ A New Experience with Weathers
 
-A sleek and modern weather forecasting web application that provides real-time weather updates, a detailed 5-day forecast, and city-based weather search functionality.
+A sleek and responsive weather app that shows real-time conditions, temperature trends, and a 5-day forecast.  
+Includes city search, detailed metrics, and a dark-mode UI for a modern user experience.
+
+![Climate App](./public/Climateapp.png)
 
 ## 🚀 Features
 
